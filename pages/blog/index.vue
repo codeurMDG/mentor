@@ -18,11 +18,13 @@
             </div>
 
             <!-- Contrôles de pagination -->
-            <nav class="pagination">
-                <button :disabled="currentPage === 1" @click="prevPage">Previous</button>
-                <span>Page {{ currentPage }} of {{ totalPages }}</span>
-                <button :disabled="currentPage === totalPages" @click="nextPage">Next</button>
-            </nav>
+            <div v-if="posts.length > 8">
+                <nav class="pagination">
+                    <button :disabled="currentPage === 1" @click="prevPage">Previous</button>
+                    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+                    <button :disabled="currentPage === totalPages" @click="nextPage">Next</button>
+                </nav>
+            </div>
         </div>
 
         <div v-else aria-busy="true"></div>
@@ -33,7 +35,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-const { data: posts } = useFetch('https://jsonplaceholder.typicode.com/posts');
+const { data: posts } = useFetch('https://jsonplaceholder.typicode.com/posts?_limit=20');
 
 // Pagination state
 const currentPage = ref(1);
