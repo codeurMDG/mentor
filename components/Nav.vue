@@ -3,14 +3,16 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li class="logo">
-                        <NuxtImg src="../public/Logo/codeur-logo.png" alt="logo" width="28" height="28" />
-                        <strong>Mentor</strong>
+                    <li>
+                        <NuxtLink to="/" class="logo">
+                            <NuxtImg src="../public/Logo/codeur-logo.png" alt="logo" width="28" height="28" />
+                            <strong>Mentor</strong>
+                        </NuxtLink>
                     </li>
                 </ul>
                 <ul>
                     <li><NuxtLink to="/about" class="secondary">About</NuxtLink></li>
-                    <li><NuxtLink top="/blog" class="secondary">Blog</NuxtLink></li>
+                    <li><NuxtLink to="/blog" class="secondary">Blog</NuxtLink></li>
                     <li><NuxtLink to="#" class="secondary ri-github-fill icon"></NuxtLink></li>
                     <li><NuxtLink to="#" class="secondary ri-discord-fill icon"></NuxtLink></li>
                 </ul>
