@@ -3,13 +3,16 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><strong>Mentor</strong></li>
+                    <li class="logo">
+                        <NuxtImg src="../public/Logo/codeur-logo.png" alt="logo" width="28" height="28" />
+                        <strong>Mentor</strong>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="secondary">About</a></li>
-                    <li><a href="#" class="secondary">Blog</a></li>
-                    <li><a href="#" class="secondary ri-github-fill icon"></a></li>
-                    <li><a href="#" class="secondary ri-discord-fill icon"></a></li>
+                    <li><NuxtLink to="/about" class="secondary">About</NuxtLink></li>
+                    <li><NuxtLink top="/blog" class="secondary">Blog</NuxtLink></li>
+                    <li><NuxtLink to="#" class="secondary ri-github-fill icon"></NuxtLink></li>
+                    <li><NuxtLink to="#" class="secondary ri-discord-fill icon"></NuxtLink></li>
                 </ul>
             </nav>
         </div>
@@ -19,6 +22,13 @@
     .header {
         padding: 8px;
         border-bottom: 1px solid #ffffff2f;
+
+        .logo {
+            display: flex;
+            align-items: center; 
+            gap: 10px;
+        }
+
         strong {
             font-size: 30px;
             color: #fff;
