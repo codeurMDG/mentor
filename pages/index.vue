@@ -4,3 +4,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia, voluptas, doloremque, consequuntur, velit, molestias, eaque, quos, accusamus, laborum, voluptate, fugiat, asperiores, veritatis.</p>
     </main>
 </template>
+
+<style scoped>
+
+    .container {
+        padding-block: 50px;
+    }
+
+</style>
