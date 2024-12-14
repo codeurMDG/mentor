@@ -3,7 +3,7 @@
     <hr>
 
     <main class="container">
-        <small>&copy; Copy right {{ date }} Prod by <a href="https://codeur-mdg.vercel.app/" target="_blank" class="secondary">Codeur MDG</a></small>
+        <small>&copy; Copyright {{ date }}. Made by <a href="https://codeur-mdg.vercel.app/" target="_blank" class="secondary">Codeur MDG</a></small>
     </main>
 
 </template>
@@ -24,7 +24,7 @@ const date = new Date().getFullYear()
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
 
