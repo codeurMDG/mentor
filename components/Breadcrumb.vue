@@ -1,7 +1,6 @@
 <template>
   <nav aria-label="Breadcrumb" class="breadcrumb">
     <ul>
-      
       <li v-for="(crumb, index) in breadcrumbs" :key="index">
         <template v-if="index < breadcrumbs.length - 1">
           <NuxtLink :to="crumb.link">{{ crumb.label }}</NuxtLink>
@@ -15,9 +14,6 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-
-// Generate breadcrumbs dynamically
 const route = useRoute();
 const breadcrumbs = route.path
   .split('/')
