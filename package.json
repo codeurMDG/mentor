@@ -14,6 +14,7 @@
     "@picocss/pico": "^2.0.6",
     "nuxt": "^3.14.1592",
     "remixicon": "^4.5.0",
+    "velite": "^0.2.1",
     "vue": "latest",
     "vue-router": "latest"
   }

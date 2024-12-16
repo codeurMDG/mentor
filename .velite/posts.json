@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "blog/hello",
+    "title": "Introduction à Velite",
+    "date": "2024-12-16T00:00:00.000Z",
+    "published": true,
+    "body": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(r){const o={h1:\"h1\",p:\"p\",...r.components};return t(e,{children:[n(o.h1,{children:\"Bienvenue dans Velite 🚀\"}),\"\\n\",n(o.p,{children:\"Velite est une solution légère pour gérer du contenu Markdown et MDX.\"})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAParams": "hello"
+  }
+]
